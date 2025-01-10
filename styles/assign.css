@@ -1,0 +1,70 @@
+.open-sans-normal {
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+  
+  
+  *{
+      margin: 0px;
+      padding: 0px;
+  }
+  
+  .full-body-bg{
+      background-color: rgb(247, 248, 250);
+      justify-content: space-between;
+      margin: 0px 200px 0px ;
+  }
+        /* Bangladesh 2.0 Hero Section Start */
+
+  .hero{
+    position: static;
+    width: 1280px;
+    height: 560px;
+    background-color: rgb(198, 228, 214);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center ;
+    gap: 64;
+
+}
+.bd-title{
+    font-family: Fira Sans;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #636161 ;
+
+}
+
+.bd-description{
+    font-family: Fira Sans;
+    font-size: 52px;
+    font-weight: 600;
+    
+}
+.btn-new-bd{
+    background-color:#007911;
+    padding: 15px 25px 15px 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: Fira Sans;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: #ffffff;
+    
+}
+.bd-flag{
+    padding: 0px 0px 0px 100px;
+}
+
+/* Bangladesh 2.0 Hero Section End */
+
+
