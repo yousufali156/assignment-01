@@ -16,7 +16,10 @@
   .full-body-bg{
       background-color: rgb(247, 248, 250);
       justify-content: space-between;
-      margin: 0px 200px 0px ;
+      margin: 0px 200px 0px 200px ;
+      position: static;
+      width: 1280px;
+      height: 560px;
   }
         /* Bangladesh 2.0 Hero Section Start */
 
@@ -67,4 +70,110 @@
 
 /* Bangladesh 2.0 Hero Section End */
 
+/* The Vision of Future Start */
 
+.future{
+    margin-top: 50px;
+
+}
+.future-title{
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 40px;
+    row-gap: 48px;
+    font-family: Fira Sans;
+    letter-spacing: 0;
+    align-items: left;
+    gap: 24px;
+
+}
+.future-description{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    row-gap: 24px;
+    font-family: Fira Sans;
+    letter-spacing: 0;
+    align-items: left;
+    gap: 12;
+
+}
+.all-card{
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+.card-1{
+    background-color: rgba(84, 144, 245, 0.2);
+    padding: 25px 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+.card-title{
+    margin-top: 8px;
+
+}
+
+.card-description{
+    margin-top: 15px;
+
+}
+.card-btn-1{
+    margin-top: 15px;
+    background-color:#5490F5;
+    padding: 11px  ;
+    border-radius: 10px;
+    font-family: Fira Sans;
+    font-size: 16px;
+    font-weight: 600;
+    row-gap: 19px;
+    letter-spacing: 0%;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+
+}
+
+.card-2{
+    background-color: rgb(198, 228, 214);
+    box-sizing: border-box;
+    border-radius: 16px;
+    padding: 25px 20px;
+}
+.card-btn-2{
+    margin-top: 15px;
+    background-color:#09A15C;
+    padding: 11px  ;
+    border-radius: 10px;
+    font-family: Fira Sans;
+    font-size: 16px;
+    font-weight: 600;
+    row-gap: 19px;
+    letter-spacing: 0%;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+
+}
+.card-3{
+    background-color: #F7EBCF ;
+    box-sizing: border-box;
+    border-radius: 16px;
+    padding: 25px 20px;
+}
+.card-btn-3{
+    margin-top: 15px;
+    background-color:#FFC239;
+    padding: 11px  ;
+    border-radius: 10px;
+    font-family: Fira Sans;
+    font-size: 16px;
+    font-weight: 600;
+    row-gap: 19px;
+    letter-spacing: 0%;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+}
+
+        /* The Vision of Future End */
