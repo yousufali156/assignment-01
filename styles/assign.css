@@ -1,7 +1,7 @@
 .open-sans-normal {
     font-family: "Open Sans", serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: normal;
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
@@ -62,13 +62,15 @@
     line-height: 22px;
     letter-spacing: 0%;
     color: #ffffff;
-    
+    cursor: pointer;
+    border: none;
 }
 .bd-flag{
     padding: 0px 0px 0px 100px;
 }
 
 /* Bangladesh 2.0 Hero Section End */
+
 
 /* The Vision of Future Start */
 
@@ -177,3 +179,88 @@
 }
 
         /* The Vision of Future End */
+
+        /* Recent News Start */
+.news-1 {
+    margin-top: 50px;
+}
+
+.news-title {
+    color: rgb(14, 14, 14);
+    font-family: Fira Sans;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.news-description {
+    margin-top: 25px;
+    color: #0E0E0E;
+    font-family: Fira Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.news-box {
+    margin-top: 50px;
+    display: flex;
+    gap: 32px;
+    gap: 32;
+    padding: 48px;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background: rgb(255, 255, 255);
+}
+
+.satelite-pic img {
+    border-radius: 50%;
+    background: url(assets/satelite.png);
+    border-radius: 24px;
+    position: static;
+    width: 408px;
+    height: 306px;
+}
+
+
+.satelite-title {
+    color:#0E0E0E;
+    font-family: Fira Sans;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0%;
+    margin-bottom: 12px;   
+}
+
+.img-al{
+    margin-bottom: 15px;
+}
+
+.time{
+   margin-top: 20px;
+}
+
+.satelite-description {
+    margin-top: 20px;
+    color: #0E0E0E;
+    font-family: Fira Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;   
+}
+
+/* Recent News End */
+
+
+ /* Donate For Bangladesh Section Start */
+
+
+
+
+
+ /* Donate For Bangladesh Section End */
