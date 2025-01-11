@@ -113,6 +113,8 @@
     padding: 25px 20px;
     box-sizing: border-box;
     border-radius: 16px;
+    width: 426px;
+    height: 325px;
 }
 .card-title{
     margin-top: 8px;
@@ -144,6 +146,8 @@
     box-sizing: border-box;
     border-radius: 16px;
     padding: 25px 20px;
+    width: 426px;
+    height: 325px;
 }
 .card-btn-2{
     margin-top: 15px;
@@ -165,6 +169,8 @@
     box-sizing: border-box;
     border-radius: 16px;
     padding: 25px 20px;
+    width: 426px;
+    height: 325px;
 }
 .card-btn-3{
     margin-top: 15px;
@@ -182,6 +188,38 @@
 }
 
         /* The Vision of Future End */
+
+        /* Dr. Muhammad Yunus Start  */
+.dr-mdyunus{
+    margin-top: 50px;
+    gap: 32px;
+    padding: 48px;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background: rgb(255, 255, 255) url(../assets/quote-bg.png);
+    background-repeat: no-repeat;
+    background-position:left 50px top 45px ;
+}
+.dr-muhammad-yunus{
+    color: #160707;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.dr-yunus-p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #636161;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+        /* Dr. Muhammad Yunus Start */       
 
         /* Recent News Start */
 .news-1 {
@@ -272,6 +310,7 @@
     text-align: center;
  }
  .donate-description{
+    margin-top: 25px;
     color: #0E0E0E;
     font-family: Fira Sans;
     font-size: 16px;
@@ -402,6 +441,7 @@
 .sb-title{
     padding: 50px 0px 16px 0px;
     margin-top: 80px;
+    margin-bottom: 16px;
     font-family: Fira Sans;
     font-size: 40px;
     font-weight: 600;
@@ -473,6 +513,7 @@
  .space{
     gap: 24;
     padding-right: 10px;
+    cursor: pointer;
  }
  /* footer end  */
  .hover-btn:hover {
