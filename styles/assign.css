@@ -307,6 +307,16 @@
 
  }
 
+
+ .hover-taka:hover{
+    background-color: #3bbb61;
+    transition: background-color 0.3s, transform 0.3s;
+    transition-behavior: normal, normal;
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+ }
+
  .select{
 
     box-sizing: border-box;
@@ -448,3 +458,25 @@
  /* Subscribe Newsletter End  */
 
 
+ /* footer start  */
+
+ .ft-center {
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+    padding: 50px 0px 50px 0px;
+    gap: 20;
+ }
+ .ft-title{
+    font-size: 25px;
+    font-weight: 600;
+ }
+ .space{
+    gap: 24;
+    padding-right: 10px;
+ }
+ /* footer end  */
+ .hover-btn:hover {
+    background-color: #3bbb61;
+    color: white;
+    
+ }
