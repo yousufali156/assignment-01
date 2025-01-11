@@ -259,8 +259,111 @@
 
  /* Donate For Bangladesh Section Start */
 
+ .donate-title{
+    color: #0E0E0E;
+    font-family: Fira Sans;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+ }
+ .donate-description{
+    color: #0E0E0E;
+    font-family: Fira Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+ }
+ 
+ .select-taka{
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 54;
+    padding: 40px 40px 40px 40px;
+    flex: none;
+    margin: 32px 14px 32px 0px;
+    font-family: Fira Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+ }
+
+ .select{
+
+    box-sizing: border-box;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    border-radius: 16px;
+    background: rgb(198, 228, 214);
+
+ }
+ .center-taka{
+    width: auto;
+    text-align: center;
+ }
+
+ .donate-fill{
+    gap:20px ;
+    text-align: center;
+}
 
 
+ .other-taka, input[type] {
+    text-align: center;
+    width: 800px;
+    height: 24px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24;
+    padding: 20px 40px 20px 40px;
+ }
+
+ .donate-btn{
+    background-color: #007911;
+    padding: 15px 25px 15px 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: Fira Sans;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+  
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+     
+ }
+ .center-btn{
+    text-align: center;
+ }
 
 
- /* Donate For Bangladesh Section End */
+ /* Donate For Bangladesh Section End  */
