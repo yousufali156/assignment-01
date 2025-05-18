@@ -1,523 +1,174 @@
-.open-sans-normal {
-    font-family: "Open Sans", serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
-  
-  
-  *{
-      margin: 0px;
-      padding: 0px;
-  }
-  
-  .full-body-bg{
-      background-color: rgb(247, 248, 250);
-      justify-content: space-between;
-      margin: 0px 200px 0px 200px ;
-      position: static;
-      width: 1280px;
-      height: 560px;
-  }
-  section{
-    padding-bottom: 20px;
- }
-        /* Bangladesh 2.0 Hero Section Start */
-
-  .hero{
-    position: static;
-    width: 1280px;
-    height: 560px;
-    background-color: rgb(198, 228, 214);
-    border-radius: 24px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items:center ;
-    gap: 64;
-
-}
-.bd-title{
-    font-family: Fira Sans;
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 16px;
-    color: #636161 ;
-
+/* ======= Global Responsive Reset ======= */
+body, html {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-.bd-description{
-    font-family: Fira Sans;
-    font-size: 52px;
-    font-weight: 600;
-    
-}
-.btn-new-bd{
-    background-color:#007911;
-    padding: 15px 25px 15px 25px;
-    border-radius: 10px;
-    margin-top: 20px;
-    font-family: Fira Sans;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 22px;
-    letter-spacing: 0%;
-    color: #ffffff;
-    cursor: pointer;
-    border: none;
-}
-.bd-flag{
-    padding: 0px 0px 0px 100px;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-/* Bangladesh 2.0 Hero Section End */
-
-
-/* The Vision of Future Start */
-
-.future{
-    margin-top: 50px;
-
-}
-.future-title{
-    margin-top: 50px;
-    font-weight: 700;
-    font-size: 40px;
-    row-gap: 48px;
-    font-family: Fira Sans;
-    letter-spacing: 0;
-    align-items: left;
-    gap: 24px;
-
-}
-.future-description{
-    margin-top: 20px;
-    font-weight: 400;
-    font-size: 16px;
-    row-gap: 24px;
-    font-family: Fira Sans;
-    letter-spacing: 0;
-    align-items: left;
-    gap: 12;
-
-}
-.all-card{
-    display: flex;
-    gap: 50px;
-    margin-top: 50px;
-}
-.card-1{
-    background-color: rgba(84, 144, 245, 0.2);
-    padding: 25px 20px;
-    box-sizing: border-box;
-    border-radius: 16px;
-    width: 426px;
-    height: 325px;
-}
-.card-title{
-    margin-top: 8px;
-
+.full-body-bg,
+.hero,
+.sb-bg {
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.card-description{
-    margin-top: 15px;
+/* ======= Responsive Breakpoints ======= */
 
-}
-.card-btn-1{
-    margin-top: 15px;
-    background-color:#5490F5;
-    padding: 11px  ;
-    border-radius: 10px;
-    font-family: Fira Sans;
-    font-size: 16px;
-    font-weight: 600;
-    row-gap: 19px;
-    letter-spacing: 0%;
-    color: #ffffff;
-    cursor: pointer;
-    border: none;
-
-}
-
-.card-2{
-    background-color: rgb(198, 228, 214);
-    box-sizing: border-box;
-    border-radius: 16px;
-    padding: 25px 20px;
-    width: 426px;
-    height: 325px;
-}
-.card-btn-2{
-    margin-top: 15px;
-    background-color:#09A15C;
-    padding: 11px  ;
-    border-radius: 10px;
-    font-family: Fira Sans;
-    font-size: 16px;
-    font-weight: 600;
-    row-gap: 19px;
-    letter-spacing: 0%;
-    color: #ffffff;
-    cursor: pointer;
-    border: none;
-
-}
-.card-3{
-    background-color: #F7EBCF ;
-    box-sizing: border-box;
-    border-radius: 16px;
-    padding: 25px 20px;
-    width: 426px;
-    height: 325px;
-}
-.card-btn-3{
-    margin-top: 15px;
-    background-color:#FFC239;
-    padding: 11px  ;
-    border-radius: 10px;
-    font-family: Fira Sans;
-    font-size: 16px;
-    font-weight: 600;
-    row-gap: 19px;
-    letter-spacing: 0%;
-    color: #ffffff;
-    cursor: pointer;
-    border: none;
-}
-
-        /* The Vision of Future End */
-
-        /* Dr. Muhammad Yunus Start  */
-.dr-mdyunus{
-    margin-top: 50px;
-    gap: 32px;
-    padding: 48px;
-    box-sizing: border-box;
-    border-radius: 24px;
-    background: rgb(255, 255, 255) url(../assets/quote-bg.png);
-    background-repeat: no-repeat;
-    background-position:left 50px top 45px ;
-}
-.dr-muhammad-yunus{
-    color: #160707;
-    font-size: 30px;
-    font-weight: 800;
-    line-height: 24px;
-    letter-spacing: 0%;
-    text-align: left;
-}
-
-.dr-yunus-p{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #636161;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: 0%;
-    text-align: left;
-}
-        /* Dr. Muhammad Yunus Start */       
-
-        /* Recent News Start */
-.news-1 {
-    margin-top: 50px;
-}
-
-.news-title {
-    color: rgb(14, 14, 14);
-    font-family: Fira Sans;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 48px;
-    letter-spacing: 0%;
-    text-align: left;
-}
-
-.news-description {
-    margin-top: 25px;
-    color: #0E0E0E;
-    font-family: Fira Sans;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0%;
-    text-align: left;
-}
-
-.news-box {
-    margin-top: 50px;
-    display: flex;
-    gap: 32px;
-    gap: 32;
-    padding: 48px;
-    box-sizing: border-box;
-    border-radius: 24px;
-    background: rgb(255, 255, 255);
-}
-
-.satelite-pic img {
-    border-radius: 50%;
-    background: url(assets/satelite.png);
-    border-radius: 24px;
-    position: static;
-    width: 408px;
-    height: 306px;
-}
-
-
-.satelite-title {
-    color:#0E0E0E;
-    font-family: Fira Sans;
-    font-size: 32px;
-    font-weight: 700;
-    letter-spacing: 0%;
-    margin-bottom: 12px;   
-}
-
-.img-al{
-    margin-bottom: 15px;
-}
-
-.time{
-   margin-top: 20px;
-}
-
-.satelite-description {
-    margin-top: 20px;
-    color: #0E0E0E;
-    font-family: Fira Sans;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0%;   
-}
-
-/* Recent News End */
-
-
- /* Donate For Bangladesh Section Start */
-
- .donate-title{
-    color: #0E0E0E;
-    font-family: Fira Sans;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 48px;
-    letter-spacing: 0%;
-    text-align: center;
- }
- .donate-description{
-    margin-top: 25px;
-    color: #0E0E0E;
-    font-family: Fira Sans;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0%;
-    text-align: center;
- }
- 
- .select-taka{
-    text-align: center;
-    box-sizing: border-box;
-    border: 1px solid rgba(14, 14, 14, 0.15);
-    border-radius: 16px;
-    background: rgb(255, 255, 255);
+/* ---------- Phones (Portrait < 600px) ---------- */
+@media (max-width: 599px) {
+  .full-body-bg,
+  .hero,
+  .sb-bg,
+  .news-box,
+  .all-card {
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 54;
-    padding: 40px 40px 40px 40px;
-    flex: none;
-    margin: 32px 14px 32px 0px;
-    font-family: Fira Sans;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 18px;
-    letter-spacing: 0%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-
- }
-
-
- .hover-taka:hover{
-    background-color: #3bbb61;
-    transition: background-color 0.3s, transform 0.3s;
-    transition-behavior: normal, normal;
-    transition-duration: 0.3s, 0.3s;
-    transition-timing-function: ease, ease;
-    transition-delay: 0s, 0s;
- }
-
- .select{
-
-    box-sizing: border-box;
-    border: 1px solid rgba(14, 14, 14, 0.15);
-    border-radius: 16px;
-    background: rgb(198, 228, 214);
-
- }
- .center-taka{
-    width: auto;
-    text-align: center;
- }
-
- .donate-fill{
-    margin-top: 50px;
-    gap:20px ;
-    text-align: center;
-}
-
-
- .other-taka, input[type] {
-    text-align: center;
-    width: 800px;
-    height: 24px;
-    margin-top: 10px;
-    padding: 10px;
-    font-size: 16px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 24;
-    padding: 20px 40px 20px 40px;
- }
-
- .donate-btn{
-    background-color: #007911;
-    padding: 15px 25px 15px 25px;
-    border-radius: 10px;
-    margin-top: 20px;
-    font-family: Fira Sans;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 22px;
-    letter-spacing: 0%;
-    color: #ffffff;
-    cursor: pointer;
-    border: none;
-  
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    
-     
- }
- .center-btn{
-    text-align: center;
- }
-
-
- /* Donate For Bangladesh Section End  */
-
-  /* Subscribe Newsletter Start */
-.sb-bg{
-    
-    background-color: #C6E4D6;
-    margin: 50px 200px 50px 0px;
-    position: static;
-    width: 1280px;
-    height: 395px;
-    border-radius: 24px;
-    justify-content: center;
-    align-items: center;
-    
-}
- .text-center{
-    text-align: center;
- }
-
-.sb-title{
-    padding: 50px 0px 16px 0px;
-    margin-top: 80px;
-    margin-bottom: 16px;
-    font-family: Fira Sans;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 40px;
-    letter-spacing: 0%;
-}
-
-.sb-description{
-    margin-bottom: 16px;
-    font-family: Fira Sans;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0%;
-
-}
-
-.sub-input{
-    display: flex;
-    text-align: left;
-    justify-content: center;
-    align-items:center;
     padding: 20px;
-}
+    margin: 0;
+    width: 100%;
+  }
 
-.sub-btn{
-    background-color: #007911;
-    padding: 22px 22px 22px 22px;
-    border-radius: 0px 10px 10px 0px;
-    font-family: Fira Sans;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
-    letter-spacing: 0%;
-    color: #ffffff;
-    cursor: pointer;
-    border: none;
-    justify-content: center;
-    align-items:center;
-    
-}
-
- .input-left [type] { 
-    margin-top: 24px 24px 24px 0px ; 
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border: none;
-    text-align: left;
-    padding-right: 100px;
- }
- .slogan{
-    margin-top: 50px;
- }
-
- /* Subscribe Newsletter End  */
-
-
- /* footer start  */
-
- .ft-center {
+  .hero {
+    align-items: center;
     text-align: center;
-    margin: 50px 0px 50px 0px;
-    padding: 50px 0px 50px 0px;
-    gap: 20;
- }
- .ft-title{
-    font-size: 25px;
-    font-weight: 600;
- }
- .space{
-    gap: 24;
-    padding-right: 10px;
-    cursor: pointer;
- }
- /* footer end  */
- .hover-btn:hover {
-    background-color: #3bbb61;
-    color: white;
-    
- }
+    height: auto;
+    gap: 32px;
+  }
+
+  .bd-description {
+    font-size: 28px;
+  }
+
+  .btn-new-bd,
+  .donate-btn,
+  .card-btn-1,
+  .card-btn-2,
+  .card-btn-3,
+  .sub-btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .bd-flag {
+    padding: 0;
+  }
+
+  .card-1, .card-2, .card-3 {
+    width: 100%;
+    height: auto;
+  }
+
+  .future-title {
+    font-size: 26px;
+  }
+
+  .dr-muhammad-yunus {
+    font-size: 20px;
+  }
+
+  .sub-input {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+  }
+
+  .input-left [type] {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .sub-btn {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .other-taka, input[type] {
+    width: 100%;
+  }
+}
+
+/* ---------- Tablets (600px - 991px) ---------- */
+@media (min-width: 600px) and (max-width: 991px) {
+  .full-body-bg,
+  .hero,
+  .sb-bg,
+  .news-box {
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+  }
+
+  .hero {
+    text-align: center;
+    height: auto;
+  }
+
+  .bd-description {
+    font-size: 36px;
+  }
+
+  .btn-new-bd {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+  .bd-flag {
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .all-card {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card-1, .card-2, .card-3 {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .sub-input {
+    flex-direction: column;
+  }
+
+  .input-left [type] {
+    width: 100%;
+  }
+
+  .sub-btn {
+    width: 100%;
+  }
+}
+
+/* ---------- Small Desktops / Landscape Tablets (992px - 1199px) ---------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .full-body-bg,
+  .hero,
+  .sb-bg {
+    width: 100%;
+    padding: 40px;
+  }
+
+  .bd-description {
+    font-size: 42px;
+  }
+
+  .card-1, .card-2, .card-3 {
+    width: 300px;
+  }
+}
+
+/* ---------- Large Screens / Desktops (1200px+) ---------- */
+@media (min-width: 1200px) {
+  .full-body-bg,
+  .hero,
+  .sb-bg {
+    max-width: 1280px;
+    margin: auto;
+  }
+}
