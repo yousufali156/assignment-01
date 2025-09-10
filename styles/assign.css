@@ -463,8 +463,9 @@
     text-align: left;
     justify-content: center;
     align-items:center;
-    padding: 20px;
+   overflow: hidden;
 }
+
 
 .sub-btn{
     background-color: #007911;
