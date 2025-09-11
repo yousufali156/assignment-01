@@ -1,216 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bangladesh 2.0</title>
-    <link rel="stylesheet" href="styles/assign.css">
-    <link rel="icon" type="image/x-icon" href="assets/bd flag.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bangladesh 2.0</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: "Fira Sans", sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+    h1, h2, h3, h4, h5, h6 { margin: 0; }
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    /* -------------------------
+       Recent News
+    ------------------------- */
+    .news-section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .news-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .news-header h1 {
+      font-size: 40px;
+      font-weight: 700;
+    }
+    .news-card {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      margin-bottom: 30px;
+      gap: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    .news-card:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    .news-img img {
+      width: 400px;
+      border-radius: 15px;
+    }
+    .news-content h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .news-content p {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+    .news-content button {
+      margin-top: 10px;
+      padding: 12px 22px;
+      border: none;
+      border-radius: 8px;
+      background: #007911;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .news-content button:hover {
+      background: #3bbb61;
+    }
 
+    /* -------------------------
+       Donate Section
+    ------------------------- */
+    .donate-section {
+      background: #fff;
+      padding: 60px 20px;
+      text-align: center;
+      border-radius: 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    .donate-title {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+    .donate-options {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 30px 0;
+    }
+    .donate-options button {
+      padding: 20px 40px;
+      border-radius: 15px;
+      border: 1px solid #ddd;
+      background: #f9f9f9;
+      font-size: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .donate-options button:hover {
+      background: #3bbb61;
+      color: #fff;
+    }
+    .donate-input {
+      margin: 20px 0;
+    }
+    .donate-input input {
+      padding: 14px 20px;
+      width: 60%;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      font-size: 16px;
+    }
+    .donate-btn {
+      margin-top: 20px;
+      padding: 14px 30px;
+      background: #007911;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .donate-btn:hover {
+      background: #3bbb61;
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-content {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+    }
+    .modal-content h2 { margin-bottom: 15px; }
+    .close-btn {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      background: #007911;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    /* -------------------------
+       Subscribe Newsletter
+    ------------------------- */
+    .subscribe-section {
+      background: #C6E4D6;
+      text-align: center;
+      padding: 50px 20px;
+      border-radius: 20px;
+      max-width: 800px;
+      margin: 40px auto;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    .subscribe-section h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+    .subscribe-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .subscribe-box input {
+      flex: 1;
+      padding: 14px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+    }
+    .subscribe-box button {
+      background: #007911;
+      color: #fff;
+      padding: 14px 22px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .subscribe-box button:hover {
+      background: #3bbb61;
+    }
+    .subscribe-success {
+      margin-top: 15px;
+      color: #007911;
+      font-weight: 600;
+      display: none;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      .news-card {
+        flex-direction: column !important;
+        text-align: center;
+      }
+      .news-img img { width: 100%; }
+      .donate-input input { width: 100%; }
+      .subscribe-box { flex-direction: column; }
+      .subscribe-box input { width: 100%; }
+      .subscribe-box button { width: 100%; }
+    }
+  </style>
 </head>
+<body>
 
-<body class="open-sans-normal full-body-bg ">
+  <!-- Recent News -->
+  <section class="news-section">
+    <div class="news-header">
+      <h1>Recent News</h1>
+      <p>Stay updated with the latest developments of Bangladesh 2.0.</p>
+    </div>
 
-    <header>
+    <div class="news-card">
+      <div class="news-img"><img src="assets/buk petechi.png" alt=""></div>
+      <div class="news-content">
+        <h2>Bangladesh New Independence Achievement 2.0</h2>
+        <p>Bangladesh 2.0 marks a new journey towards democracy, fairness, and progress under the interim leadership.</p>
+        <button>Read More</button>
+      </div>
+    </div>
 
-    </header>
-    <main>
+    <div class="news-card">
+      <div class="news-img"><img src="assets/satelite.png" alt=""></div>
+      <div class="news-content">
+        <h2>Understanding Satellites: Purpose & Impact</h2>
+        <p>Satellites play a vital role in communication, weather, and navigation shaping the modern world.</p>
+        <button>Read More</button>
+      </div>
+    </div>
 
-            <!-- Bangladesh 2.0 Hero Section Start -->
+    <div class="news-card">
+      <div class="news-img"><img src="assets/hilsa ilis.png" alt=""></div>
+      <div class="news-content">
+        <h2>Hilsha Fish (Ilish) – National Pride</h2>
+        <p>The national fish of Bangladesh, Ilish, is cherished for its taste and cultural importance.</p>
+        <button>Read More</button>
+      </div>
+    </div>
+  </section>
 
-        <section class="hero">
-            <div>
-                <h4 class="bd-title">Bangladesh 2.0</h4>
-                <h1 class="bd-description">Idea , innovation ,<br>
-                    vision and challenges in <br>
-                    New Bangladesh.</h1>
-                    <a href=""><button class="btn-new-bd hover-btn">Explore New Bangladesh</button></a>
-               
-                
-            </div>
-            <div class="bd-flag">
-                <img src="assets/hero.png" alt="">
-            </div>
+  <!-- Donate Section -->
+  <section class="donate-section">
+    <h1 class="donate-title">Donate Today For New Bangladesh</h1>
+    <p>Support initiatives that drive sustainable growth and innovation.</p>
 
-        </section>
+    <div class="donate-options">
+      <button>100 Taka</button>
+      <button>200 Taka</button>
+      <button>500 Taka</button>
+      <button>1000 Taka</button>
+    </div>
 
-              <!-- Bangladesh 2.0 Hero Section End -->
-        
-                 <!-- The Vision of Future Start -->
+    <div class="donate-input">
+      <input type="text" placeholder="Other Amount (Taka)">
+    </div>
+    <button class="donate-btn" id="donateNow">Donate Now</button>
+  </section>
 
-        <section>
-            <div class="future">
-                <h1 class="future-title">The Vision of Future</h1>
-                <p class="future-description"> The vision of a New Bangladesh focuses on innovation through digital transformation, sustainable development, and inclusive growth. Emphasizing technology and education, the nation aims to become a global economic powerhouse while addressing challenges like infrastructure, climate change, and inequality. The future of Bangladesh envisions a resilient, thriving society driven by creativity, collaboration, and progress.</p>
-            </div>
+  <!-- Modal -->
+  <div class="modal" id="donateModal">
+    <div class="modal-content">
+      <h2>🎉 Donation Successful!</h2>
+      <p>Thank you for contributing to New Bangladesh.</p>
+      <button class="close-btn" id="closeModal">Close</button>
+    </div>
+  </div>
 
-            <div class="all-card">
-                <div class="card-1">
-                    <img src="assets/card-icon.png" alt="">
-                <h3 class="card-title">Digital Transformation</h3>
-                <p class="card-description">Digital transformation is the process of leveraging digital technologies to fundamentally change business operations, customer experiences, and value delivery.</p>
-                <button class="card-btn-1 hover-btn">Learn More</button>
-                </div>
-    
-                <div class="card-2">
-                    <img src="assets/card-icon.png" alt="">
-                <h3 class="card-title">Green Energy</h3>
-                <p class="card-description">Green energy refers to energy derived from renewable, environmentally friendly sources like solar, wind, and hydropower, reducing carbon emissions.</p>
-                <button class="card-btn-2 hover-btn">Learn More</button>
-                </div>
-    
-                <div class="card-3">
-                    <img src="assets/card-icon.png" alt="">
-                <h3 class="card-title">Modern Infrastructure</h3>
-                <p class="card-description">Modern infrastructure refers to advanced systems and structures such as transportation, utilities. designed to support sustainable growth and improve quality of life.</p>
-                <button class="card-btn-3 hover-btn">Learn More</button>
-                </div>
-            </div>
-            
-        </section>
+  <!-- Subscribe Newsletter -->
+  <section class="subscribe-section">
+    <h1>Subscribe Newsletter</h1>
+    <p>Stay connected with our latest updates & innovations.</p>
+    <div class="subscribe-box">
+      <input type="email" id="emailInput" placeholder="Enter your email">
+      <button id="subscribeBtn">Subscribe</button>
+    </div>
+    <p class="subscribe-success" id="subscribeSuccess">✅ You have successfully subscribed!</p>
+  </section>
 
-                   <!-- The Vision of Future End -->  
-                <!-- Dr. Muhammad Yunus Start -->
-        <section>
-            <div class="dr-mdyunus">
-                <p class="dr-yunus-p">
-                    Dr. Muhammad Yunus is a Bangladeshi economist, social entrepreneur, and Nobel Peace Prize laureate. He founded the Grameen Bank in 1983, pioneering the concept of microfinance to provide small, collateral-free loans to poor people, especially women. This initiative has empowered millions to escape poverty and become self-reliant. Currently, he serves as the Chief Adviser of the People's Republic of Bangladesh, leading the interim government during a transitional period. He received the 2006 Nobel Peace Prize for his contributions to economic and social development. Dr. Yunus is also a strong advocate for social business, focusing on solving societal issues over profit. Despite challenges in Bangladesh, he remains a global figure promoting poverty alleviation and sustainable development.
-                </p>
-                <h3 class="dr-muhammad-yunus">Dr. Muhammad Yunus</h3>
-                <p class="dr-yunus-p">Chief Adviser of the People's Republic of Bangladesh</p>
-            </div>
-        </section>
+  <script>
+    // Donation Modal
+    const donateBtn = document.getElementById("donateNow");
+    const donateModal = document.getElementById("donateModal");
+    const closeModal = document.getElementById("closeModal");
 
-        <!-- Dr. Muhammad Yunus end  -->              
+    donateBtn.onclick = () => { donateModal.style.display = "flex"; };
+    closeModal.onclick = () => { donateModal.style.display = "none"; };
+    window.onclick = (e) => { if (e.target == donateModal) donateModal.style.display = "none"; };
 
-                    <!-- Recent News Start  -->
+    // Subscribe
+    const subscribeBtn = document.getElementById("subscribeBtn");
+    const emailInput = document.getElementById("emailInput");
+    const subscribeSuccess = document.getElementById("subscribeSuccess");
 
-        <section>
-            <div class="news-1">
-                <h1 class="news-title">Recent News</h1>
-                <p class="news-description">Bangladesh 2.0 aims to reshape the nation's future through the adoption of advanced technologies, fostering inclusive growth, and ensuring long-term sustainability. Key initiatives include promoting renewable energy, digital transformation, and developing modern infrastructure. These efforts position Bangladesh to become a global model for development.</p>
-
-            </div>
-
-            <div class="news-box">
-                <div class="satelite-pic">
-                    <img src="assets/buk petechi.png" alt="">
-                </div>
-                <div>
-                    <h1 class="satelite-title">Bangladesh New Independence Achievement 2.0</h1>
-                    <img class="img-al" src="assets/al-jazeera.png" alt="">
-                    <br>
-                    <time class="time" datetime="">Date: 05/01/2025 Time: 10.25 PM</time>
-                    <p class="satelite-description">Bangladesh New Independence Achievement 2.0 refers to the political shift in 2024, where an interim government led by Nobel laureate Muhammad Yunus was formed after widespread public unrest. This movement, seen as a "second independence," aims to promote democracy, fairness, and prepare the country for free and fair elections.</p>
-                    <button class="btn-new-bd hover-btn" >Read More</button>
-                </div>
-            </div>
-            <div>
-                <div class="news-box">
-                   
-                    <div>
-                        <h1 class="satelite-title">"Understanding Satellites: Their Purpose and Impact"</h1>
-                        <img class="img-al" src="assets/al-jazeera.png" alt="">
-                        <br>
-                        <time class="time" datetime="">Date: 05/01/2025 Time: 10.25 PM</time>
-                        <p class="satelite-description">A satellite is a man-made object launched into orbit around Earth or other celestial bodies to collect data or provide services like communication, weather forecasting, and navigation. It serves various purposes depending on its orbit and mission.</p>
-                        <button class="btn-new-bd hover-btn ">Read More</button>
-                    </div>
-                    <div class="satelite-pic">
-                        <img src="assets/satelite.png" alt="">
-                    </div>
-            </div>
-
-            <div>
-                <div class="news-box">
-                    <div class="satelite-pic">
-                        <img src="assets/hilsa ilis.png" alt="">
-                    </div>
-                    <div>
-                        <h1 class="satelite-title">Hilsha fish (known locally as Ilish)</h1>
-                        <img class="img-al" src="assets/al-jazeera.png" alt="">
-                        <br>
-                        <time class="time" datetime="">Date: 05/01/2025 Time: 10.25 PM</time>
-                        <p class="satelite-description">Hilsha fish (Ilish) is the national fish of Bangladesh, highly valued for its rich flavor and cultural importance. It is commonly enjoyed during festivals and is a key part of traditional Bengali cuisine.</p>
-                        <button class="btn-new-bd hover-btn">Read More</button>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- Recent News End  -->
-
-         <!-- Donate For Bangladesh Section Start -->
-
-         <section>
-            <div class="taka-all">
-                <h1 class="donate-title">Donate Today For New Bangladesh</h1>
-                <p class="donate-description">Donate Today for a New Bangladesh Support initiatives driving sustainable development, renewable energy, and inclusive growth to build a brighter future for the nation. Your contribution can help transform Bangladesh into a global model of innovation and prosperity.</p>
-            </div>
-            <div>
-                <div class="center-taka">
-                    <button class="select-taka hover-taka">100 Taka</button>
-                    <button class="select-taka select hover-taka">200 Taka</button>
-                    <button class="select-taka hover-taka">500 Taka</button>
-                    <button class="select-taka hover-taka ">1000 Taka</button>
-                </div>
-            <div class="donate-fill">
-                <div>
-                    <input class="other-taka" type="text" name="" id="" placeholder="Other Amount (Taka)">
-                </div>
-                <div class="center-btn">
-                    <button class="donate-btn hover-btn">Donate Now</button>
-                </div>
-            </div>
-            </div>
-
-         </section>
-
-         <!-- Donate For Bangladesh Section End -->
-
-        <!-- Subscribe Newsletter Start -->
-
-        <section >
-            <div class="sb-bg">
-                <div class="text-center">
-                    <h1 class="sb-title">Subscribe Newsletter</h1>
-                    <p class="sb-description">Subscribe to Our Newsletter Stay updated with the latest news, developments, and initiatives in Bangladesh's growth,  technological advancements,<br> and sustainability efforts. Join us and be part of the journey toward a brighter future!</p>
-                </div>
-                <form class="sub-input" action="">
-                    <div class="input-left">
-                        <input class="vip" type="text" placeholder="Enter your email here">
-                        <button class="sub-btn hover-btn">Subscribe</button>
-                    </div>
-                </form>
-                <div class="text-center slogan">
-                    <p>We promise not to spam you!</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Subscribe Newsletter End  -->
-
-    </main>
-    <footer>
-        <div class="ft-center">
-            <h1 class="bd-title">Bangladesh 2.0</h1>
-            <br>
-            <hr>
-            <br>
-            <img class="space" src="assets/facebook.png" alt="">
-            <img class="space" src="assets/instagram.png" alt="">
-            <img class="space" src="assets/x.png" alt="">
-        </div>
-    </footer>
-
+    subscribeBtn.onclick = () => {
+      if(emailInput.value.includes("@")){
+        subscribeSuccess.style.display = "block";
+        emailInput.value = "";
+      } else {
+        alert("Please enter a valid email address!");
+      }
+    };
+  </script>
 </body>
-
 </html>

@@ -1,537 +1,461 @@
+/* =========================
+   Bangladesh 2.0 - styles
+   Final Clean + Responsive + Navbar
+========================= */
+
+/* Google font (already linked in HTML) */
 .open-sans-normal {
-font-family: "Open Sans", serif;
-font-optical-sizing: auto;
-font-weight: normal;
-font-style: normal;
-font-variation-settings:
-"wdth" 100;
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
-\*{
-margin: 0px;
-padding: 0px;
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.full-body-bg{
-background-color: rgb(247, 248, 250);
-justify-content: space-between;
-margin: 0px 200px 0px 200px ;
-position: static;
-width: 1280px;
-height: 560px;
-}
-section{
-padding-bottom: 20px;
-}
-/\* Bangladesh 2.0 Hero Section Start \*/
-
-.hero{
-position: static;
-width: 1280px;
-height: 560px;
-background-color: rgb(198, 228, 214);
-border-radius: 24px;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items\:center ;
-gap: 64;
-
-}
-.bd-title{
-font-family: Fira Sans;
-font-size: 22px;
-font-weight: 600;
-margin-bottom: 16px;
-color: #636161 ;
-
+html {
+  scroll-behavior: smooth;
 }
 
-.bd-description{
-font-family: Fira Sans;
-font-size: 52px;
-font-weight: 600;
-
-}
-.btn-new-bd{
-background-color:#007911;
-padding: 15px 25px 15px 25px;
-border-radius: 10px;
-margin-top: 20px;
-font-family: Fira Sans;
-font-size: 18px;
-font-weight: 600;
-line-height: 22px;
-letter-spacing: 0%;
-color: #ffffff;
-cursor: pointer;
-border: none;
-}
-.bd-flag{
-padding: 0px 0px 0px 100px;
+body {
+  background-color: rgb(247, 248, 250);
+  font-family: "Fira Sans", sans-serif;
+  color: #0e0e0e;
+  line-height: 1.6;
 }
 
-/\* Bangladesh 2.0 Hero Section End \*/
-
-/\* The Vision of Future Start \*/
-
-.future{
-margin-top: 50px;
-
-}
-.future-title{
-margin-top: 50px;
-font-weight: 700;
-font-size: 40px;
-row-gap: 48px;
-font-family: Fira Sans;
-letter-spacing: 0;
-align-items: left;
-gap: 24px;
-
-}
-.future-description{
-margin-top: 20px;
-font-weight: 400;
-font-size: 16px;
-row-gap: 24px;
-font-family: Fira Sans;
-letter-spacing: 0;
-align-items: left;
-gap: 12;
-
-}
-.all-card{
-display: flex;
-gap: 50px;
-margin-top: 50px;
-}
-.card-1{
-background-color: rgba(84, 144, 245, 0.2);
-padding: 25px 20px;
-box-sizing: border-box;
-border-radius: 16px;
-width: 426px;
-height: 325px;
-}
-.card-title{
-margin-top: 8px;
-
+/* Container */
+.full-body-bg {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 20px;
 }
 
-.card-description{
-margin-top: 15px;
-
-}
-.card-btn-1{
-margin-top: 15px;
-background-color:#5490F5;
-padding: 11px  ;
-border-radius: 10px;
-font-family: Fira Sans;
-font-size: 16px;
-font-weight: 600;
-row-gap: 19px;
-letter-spacing: 0%;
-color: #ffffff;
-cursor: pointer;
-border: none;
-
+/* =========================
+   Navbar
+========================= */
+header {
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-.card-2{
-background-color: rgb(198, 228, 214);
-box-sizing: border-box;
-border-radius: 16px;
-padding: 25px 20px;
-width: 426px;
-height: 325px;
-}
-.card-btn-2{
-margin-top: 15px;
-background-color:#09A15C;
-padding: 11px  ;
-border-radius: 10px;
-font-family: Fira Sans;
-font-size: 16px;
-font-weight: 600;
-row-gap: 19px;
-letter-spacing: 0%;
-color: #ffffff;
-cursor: pointer;
-border: none;
-
-}
-.card-3{
-background-color: #F7EBCF ;
-box-sizing: border-box;
-border-radius: 16px;
-padding: 25px 20px;
-width: 426px;
-height: 325px;
-}
-.card-btn-3{
-margin-top: 15px;
-background-color:#FFC239;
-padding: 11px  ;
-border-radius: 10px;
-font-family: Fira Sans;
-font-size: 16px;
-font-weight: 600;
-row-gap: 19px;
-letter-spacing: 0%;
-color: #ffffff;
-cursor: pointer;
-border: none;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
 }
 
-```
-    /* The Vision of Future End */
-
-    /* Dr. Muhammad Yunus Start  */
-```
-
-.dr-mdyunus{
-margin-top: 50px;
-gap: 32px;
-padding: 48px;
-box-sizing: border-box;
-border-radius: 24px;
-background: rgb(255, 255, 255) url(../assets/quote-bg.png);
-background-repeat: no-repeat;
-background-position\:left 50px top 45px ;
-}
-.dr-muhammad-yunus{
-color: #160707;
-font-size: 30px;
-font-weight: 800;
-line-height: 24px;
-letter-spacing: 0%;
-text-align: left;
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #007911;
+  cursor: pointer;
 }
 
-.dr-yunus-p{
-margin-top: 20px;
-margin-bottom: 20px;
-color: #636161;
-font-size: 16px;
-font-weight: 600;
-line-height: 24px;
-letter-spacing: 0%;
-text-align: left;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
 }
-/\* Dr. Muhammad Yunus Start \*/
 
-```
-    /* Recent News Start */
-```
+.nav-links a {
+  text-decoration: none;
+  color: #0e0e0e;
+  font-weight: 600;
+  transition: color 0.3s;
+}
 
+.nav-links a:hover,
+.nav-links a.active {
+  color: #007911;
+}
+
+/* =========================
+   Hero Section
+========================= */
+.hero {
+  background-color: rgb(198, 228, 214);
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  padding: 48px 24px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.bd-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #636161;
+}
+
+.bd-description {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #0e0e0e;
+}
+
+.btn-new-bd {
+  background-color: #007911;
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-new-bd:hover {
+  background-color: #3bbb61;
+}
+
+/* Hero Image */
+.bd-flag img {
+  max-width: 400px;
+  border-radius: 16px;
+  display: block;
+}
+
+/* =========================
+   Vision Section
+========================= */
+.future {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.future-title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.future-description {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.all-card {
+  display: flex;
+  gap: 32px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  padding: 24px;
+  border-radius: 16px;
+  width: 350px;
+  background: #fff;
+}
+
+.card-1 { background-color: rgba(84, 144, 245, 0.2); }
+.card-2 { background-color: rgb(198, 228, 214); }
+.card-3 { background-color: #f7ebcf; }
+
+.card-title {
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.card-description {
+  margin-top: 12px;
+  font-size: 15px;
+  color: #333;
+}
+
+.card-btn-1,
+.card-btn-2,
+.card-btn-3 {
+  margin-top: 16px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+.card-btn-1 { background-color: #5490F5; }
+.card-btn-2 { background-color: #09A15C; }
+.card-btn-3 { background-color: #FFC239; color: #000; }
+
+.card-btn-1:hover,
+.card-btn-2:hover,
+.card-btn-3:hover {
+  opacity: 0.85;
+}
+
+/* =========================
+   Dr. Yunus
+========================= */
+.dr-mdyunus {
+  margin-top: 50px;
+  padding: 40px;
+  border-radius: 24px;
+  background: #fff url("../assets/quote-bg.png") no-repeat left 40px top 40px;
+}
+
+.dr-muhammad-yunus {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.dr-yunus-p {
+  margin: 16px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* =========================
+   News
+========================= */
 .news-1 {
-margin-top: 50px;
+  margin-top: 60px;
 }
 
 .news-title {
-color: rgb(14, 14, 14);
-font-family: Fira Sans;
-font-size: 40px;
-font-weight: 700;
-line-height: 48px;
-letter-spacing: 0%;
-text-align: left;
+  font-size: 40px;
+  font-weight: 700;
 }
 
 .news-description {
-margin-top: 25px;
-color: #0E0E0E;
-font-family: Fira Sans;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0%;
-text-align: left;
+  margin-top: 16px;
+  font-size: 16px;
+  color: #444;
+}
+
+.news-search {
+  margin-top: 24px;
+  display: flex;
+  max-width: 500px;
+  gap: 10px;
+}
+
+.news-search input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.news-search button {
+  padding: 12px 20px;
+  background: #007911;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.news-search button:hover {
+  background: #3bbb61;
 }
 
 .news-box {
-margin-top: 50px;
-display: flex;
-gap: 32px;
-gap: 32;
-padding: 48px;
-box-sizing: border-box;
-border-radius: 24px;
-background: rgb(255, 255, 255);
+  margin-top: 40px;
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  border-radius: 16px;
+  background: #fff;
+  flex-wrap: wrap;
 }
 
 .satelite-pic img {
-border-radius: 50%;
-background: url(assets/satelite.png);
-border-radius: 24px;
-position: static;
-width: 408px;
-height: 306px;
+  border-radius: 16px;
+  width: 350px;
 }
 
-.satelite-title {
-color:#0E0E0E;
-font-family: Fira Sans;
-font-size: 32px;
-font-weight: 700;
-letter-spacing: 0%;
-margin-bottom: 12px;
+/* =========================
+   Donate
+========================= */
+.donate-title {
+  font-size: 36px;
+  text-align: center;
 }
 
-.img-al{
-margin-bottom: 15px;
+.donate-description {
+  margin-top: 16px;
+  text-align: center;
 }
 
-.time{
-margin-top: 20px;
+.center-taka {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
 }
 
-.satelite-description {
-margin-top: 20px;
-color: #0E0E0E;
-font-family: Fira Sans;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0%;
+.select-taka {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+  padding: 24px 32px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-/\* Recent News End \*/
-
-/\* Donate For Bangladesh Section Start \*/
-
-.donate-title{
-color: #0E0E0E;
-font-family: Fira Sans;
-font-size: 40px;
-font-weight: 700;
-line-height: 48px;
-letter-spacing: 0%;
-text-align: center;
-}
-.donate-description{
-margin-top: 25px;
-color: #0E0E0E;
-font-family: Fira Sans;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0%;
-text-align: center;
+.select-taka:hover {
+  background: #3bbb61;
+  color: #fff;
 }
 
-.select-taka{
-text-align: center;
-box-sizing: border-box;
-border: 1px solid rgba(14, 14, 14, 0.15);
-border-radius: 16px;
-background: rgb(255, 255, 255);
-flex-direction: column;
-justify-content: flex-start;
-align-items: flex-start;
-gap: 54;
-padding: 40px 40px 40px 40px;
-flex: none;
-margin: 32px 14px 32px 0px;
-font-family: Fira Sans;
-font-size: 20px;
-font-weight: 700;
-line-height: 18px;
-letter-spacing: 0%;
-justify-content: center;
-align-items: center;
-flex-direction: row;
-justify-content: flex-start;
-align-items: center;
-
+.donate-fill {
+  margin-top: 24px;
+  text-align: center;
 }
 
-.hover-taka\:hover{
-background-color: #3bbb61;
-transition: background-color 0.3s, transform 0.3s;
-transition-behavior: normal, normal;
-transition-duration: 0.3s, 0.3s;
-transition-timing-function: ease, ease;
-transition-delay: 0s, 0s;
+.other-taka {
+  width: 80%;
+  max-width: 400px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
 
-.select{
-
-```
-box-sizing: border-box;
-border: 1px solid rgba(14, 14, 14, 0.15);
-border-radius: 16px;
-background: rgb(198, 228, 214);
-```
-
-}
-.center-taka{
-width: auto;
-text-align: center;
+.donate-btn {
+  background: #007911;
+  padding: 14px 20px;
+  border-radius: 10px;
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
 }
 
-.donate-fill{
-margin-top: 50px;
-gap:20px ;
-text-align: center;
+.donate-btn:hover {
+  background: #3bbb61;
 }
 
-.other-taka, input\[type] {
-text-align: center;
-width: 800px;
-height: 24px;
-margin-top: 10px;
-padding: 10px;
-font-size: 16px;
-text-align: center;
-justify-content: center;
-align-items: center;
-border: none;
-flex-direction: column;
-justify-content: flex-start;
-align-items: center;
-gap: 24;
-padding: 20px 40px 20px 40px;
+/* =========================
+   Subscribe
+========================= */
+.sb-bg {
+  background: #C6E4D6;
+  margin: 50px auto;
+  max-width: 800px;
+  border-radius: 20px;
+  padding: 40px 20px;
+  text-align: center;
 }
 
-.donate-btn{
-background-color: #007911;
-padding: 15px 25px 15px 25px;
-border-radius: 10px;
-margin-top: 20px;
-font-family: Fira Sans;
-font-size: 18px;
-font-weight: 600;
-line-height: 22px;
-letter-spacing: 0%;
-color: #ffffff;
-cursor: pointer;
-border: none;
-
-```
-text-align: center;
-justify-content: center;
-align-items: center;
-
- 
-```
-
-}
-.center-btn{
-text-align: center;
+.sub-input {
+  display: flex;
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-/\* Donate For Bangladesh Section End  \*/
-
-/\* Subscribe Newsletter Start \*/
-.sb-bg{
-
-```
-background-color: #C6E4D6;
-margin: 50px 200px 50px 0px;
-position: static;
-width: 1280px;
-height: 395px;
-border-radius: 24px;
-justify-content: center;
-align-items: center;
-```
-
-}
-.text-center{
-text-align: center;
+.input-left input {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  outline: none;
 }
 
-.sb-title{
-padding: 50px 0px 16px 0px;
-margin-top: 80px;
-margin-bottom: 16px;
-font-family: Fira Sans;
-font-size: 40px;
-font-weight: 600;
-line-height: 40px;
-letter-spacing: 0%;
+.sub-btn {
+  background: #007911;
+  color: #fff;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.sb-description{
-margin-bottom: 16px;
-font-family: Fira Sans;
-font-size: 16px;
-line-height: 20px;
-letter-spacing: 0%;
-
+.sub-btn:hover {
+  background: #3bbb61;
 }
 
-.sub-input{
-<<<<<<< HEAD
-    display: flex;
-    text-align: left;
-    justify-content: center;
-    align-items:center;
-   overflow: hidden;
-=======
-display: flex;
-text-align: left;
-justify-content: center;
-align-items\:center;
-padding: 20px;
->>>>>>> 3f5cfb1e00f10dfe976dfc9db3a7c921dc107c16
+/* =========================
+   Footer
+========================= */
+footer {
+  margin-top: 60px;
+  background: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 1px solid #eee;
 }
 
-
-.sub-btn{
-background-color: #007911;
-padding: 22px 22px 22px 22px;
-border-radius: 0px 10px 10px 0px;
-font-family: Fira Sans;
-font-size: 16px;
-font-weight: 600;
-line-height: 20px;
-letter-spacing: 0%;
-color: #ffffff;
-cursor: pointer;
-border: none;
-justify-content: center;
-align-items\:center;
-
+.space {
+  margin: 0 10px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.input-left \[type] {
-margin-top: 24px 24px 24px 0px ;
-border-top-left-radius: 10px;
-border-bottom-left-radius: 10px;
-border: none;
-text-align: left;
-padding-right: 100px;
-}
-.slogan{
-margin-top: 50px;
+.space:hover {
+  transform: scale(1.1);
 }
 
-/\* Subscribe Newsletter End  \*/
-
-/\* footer start  \*/
-
-.ft-center {
-text-align: center;
-margin: 50px 0px 50px 0px;
-padding: 50px 0px 50px 0px;
-gap: 20;
+/* Back-to-top button */
+.back-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 16px;
+  border-radius: 50%;
+  background: #007911;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: none;
 }
-.ft-title{
-font-size: 25px;
-font-weight: 600;
-}
-.space{
-gap: 24;
-padding-right: 10px;
-cursor: pointer;
-}
-/\* footer end  \*/
-.hover-btn\:hover {
-background-color: #3bbb61;
-color: white;
 
+.back-top.show {
+  display: block;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 992px) {
+  .hero { flex-direction: column; text-align: center; }
+  .bd-description { font-size: 36px; }
+  .nav-links { gap: 16px; }
+}
+
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .navbar { justify-content: space-between; }
+  .news-search { flex-direction: column; }
+  .news-box { text-align: center; }
+  .center-taka { flex-direction: column; }
+}
+
+@media (max-width: 576px) {
+  .bd-description { font-size: 28px; }
+  .donate-title { font-size: 28px; }
 }
