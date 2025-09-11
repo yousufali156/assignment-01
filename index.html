@@ -20,15 +20,29 @@
     <header>
         <nav class="navbar container">
             <h2 class="logo">Bangladesh 2.0</h2>
+
+            <!-- Hidden checkbox -->
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+            <!-- Hamburger -->
+            <label for="menu-toggle" class="menu-toggle">
+                <img src="assets/3line.png" alt="Menu">
+            </label>
+
+            <!-- Nav Links -->
             <ul class="nav-links">
-                <li><a href="#hero" class="active">Home</a></li>
-                <li><a href="#vision">Vision</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#donate">Donate</a></li>
-                <li><a href="#subscribe">Subscribe</a></li>
+                <li><label for="menu-toggle"><a href="#hero" class="active">Home</a></label></li>
+                <li><label for="menu-toggle"><a href="#vision">Vision</a></label></li>
+                <li><label for="menu-toggle"><a href="#news">News</a></label></li>
+                <li><label for="menu-toggle"><a href="#donate">Donate</a></label></li>
+                <li><label for="menu-toggle"><a href="#subscribe">Subscribe</a></label></li>
             </ul>
         </nav>
     </header>
+
+
+
+
 
 
     <main class="container">
@@ -81,13 +95,25 @@
         </section>
 
         <!-- ================= DR. MUHAMMAD YUNUS ================= -->
-        <section class="dr-mdyunus">
-            <p class="dr-yunus-quote">“Dr. Muhammad Yunus is a Bangladeshi economist, social entrepreneur, and Nobel
-                Peace Prize laureate. He founded the Grameen Bank in 1983, pioneering microfinance to empower the poor,
-                especially women, enabling millions to escape poverty and become self-reliant.”</p>
-            <h3 class="dr-muhammad-yunus">Dr. Muhammad Yunus</h3>
-            <p class="dr-yunus-p">Chief Adviser of the People's Republic of Bangladesh</p>
+
+        <section class="quote-section">
+            <p class="quote-text">
+                <img class="quote-icon top-left" src="assets/quote-bg.png" alt="Quote Icon">
+                Dr. Muhammad Yunus is a Bangladeshi economist, social entrepreneur,<br>
+                and Nobel Peace Prize laureate. He founded the Grameen Bank in 1983, <br>
+                pioneering microfinance to empower the poor, especially women, <br>
+                enabling millions to escape poverty and become self-reliant.
+                <img class="quote-icon bottom-right" src="assets/quote-bg.png" alt="Quote Icon">
+            </p>
+
+            <div class="author">
+                <h3>Dr. Muhammad Yunus</h3>
+                <p>Chief Adviser of the People's Republic of Bangladesh</p>
+            </div>
         </section>
+
+
+
 
         <!-- ================= RECENT NEWS ================= -->
         <section id="news" class="news-container">
@@ -193,13 +219,13 @@
     <footer>
         <div class="ft-center">
             <h1 class="bd-title">Bangladesh 2.0</h1>
-            <hr>
+            <hr class="hr">
             <div class="social-icons">
                 <img src="assets/facebook.png" alt="Facebook">
                 <img src="assets/instagram.png" alt="Instagram">
                 <img src="assets/x.png" alt="X">
             </div>
-            <p>© 2025 Bangladesh 2.0 | All Rights Reserved</p>
+            <p>© 2024 Bangladesh 2.0 | All Rights Reserved</p>
         </div>
     </footer>
 
