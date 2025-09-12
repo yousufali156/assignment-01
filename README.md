@@ -42,14 +42,13 @@ Demo Live: https://yousufali156.github.io/Bangladesh-2.0/
 ## 📁 Project Structure
 
 Bangladesh-2.0/
-├── assets/ # Images, icons, and media files
-├── styles/ # CSS files
-│ └── assign.css
-├── index.html # Main HTML file
-└── README.md # Project documentation
+├── assets/ # Images, icons, and media <br>
+├── styles/ # CSS files <br>
+│ └── assign.css <br>
+├── index.html # Main HTML file <br>
+└── README.md # Project documentation <br>
 
-yaml
-Copy code
+
 
 ---
 
@@ -58,6 +57,7 @@ Copy code
 1. Clone the repository:  
    ```bash
    git clone https://github.com/yourusername/bangladesh-2.0.git
+
 Navigate to the project folder:
 
 bash
@@ -70,3 +70,7 @@ Contributions are welcome! If you want to suggest new features, improvements, or
 
 📄 License
 This project is open-source and available under the MIT License.
+
+
+Md. Yousuf Ali
+#yousufali156
